@@ -1,8 +1,33 @@
-# This is the start of me running virtual machines on Arch
+# Homelab server running on KVM/QEMU virtualization
 
-## Start required services(maybe enable in the future)
+## Requirements
 
-'''
+### Arch
+
+#### Needed packages
+
+``` shell
+paru -Syu libvirt qemu-full dnsmasq openbsd-netcat virt-manager
+```
+
+#### Start required daemons(maybe enable in the future)
+
+```
 systemctl start libvirtd.service
 systemctl start virtlogd.service
-'''
+```
+
+#### (Optional)Enable required daemons(maybe enable in the future)
+
+```
+systemctl enable libvirtd.service
+systemctl enable virtlogd.service
+```
+
+## TODO
+
+- Set up firewall
+- Set up wireguard(or tailscale)
+- Set up ssh
+- Set up redundancy(raid)
+- Make it all repeatable with a simple script and a .env file
