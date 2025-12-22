@@ -1,3 +1,4 @@
 .env
 !.env.example
 *.iso
+*.qcow2

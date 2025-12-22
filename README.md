@@ -26,6 +26,9 @@ systemctl enable virtlogd.service
 
 ## TODO
 
+- Start virtual machine(OpenSuse Leap 16)
+- Migrate to minimal KVM iso(OpenSuse Leap 16)
+- Set up networking
 - Set up firewall
 - Set up wireguard(or tailscale)
 - Set up ssh
